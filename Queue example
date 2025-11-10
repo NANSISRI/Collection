@@ -1,0 +1,40 @@
+package collections;
+
+import java.util.LinkedList;
+import java.util.*;
+public class QueueExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		Queue<String> que= new LinkedList<String>();
+		
+
+		que.add("Hello");
+		que.add("world");
+		que.add("welcome");
+		que.add("to");
+		que.add("java programming");
+		System.out.println(que);
+		
+	
+		que.remove();
+		System.out.println(que);
+		
+	
+		System.out.println(que.peek());
+		
+		// remove--> top element from the queue 
+		que.poll();
+		System.out.println(que);
+		
+		while(!que.isEmpty())
+		{
+			
+			System.out.println(que.peek());
+		
+			que.poll();
+		}
+	}
+
+}
